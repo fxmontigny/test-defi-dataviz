@@ -9,7 +9,9 @@ import { SpeedService } from 'src/app/services/speed/speed.service';
 })
 export class DashboardBubbleComponent implements OnChanges {
   @Input() speed: number = 0;
-  bubbleChartOptions: ChartOptions = {};
+  bubbleChartOptions: ChartOptions = {
+    responsive: true,
+  };
   bubbleChartLegend = true;
   bubbleChartData: ChartDataset[] = [];
 

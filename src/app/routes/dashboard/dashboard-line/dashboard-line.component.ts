@@ -10,7 +10,9 @@ import { SpeedService } from 'src/app/services/speed/speed.service';
 export class DashboardLineComponent implements OnChanges {
   @Input() speed: number = 0;
   @Input() amplitude: number = 0;
-  chartOptions: ChartOptions = {};
+  chartOptions: ChartOptions = {
+    responsive: true,
+  };
   chartLegend = true;
   chartData: ChartDataset[] = [];
   chartLabels: string[] = [];
